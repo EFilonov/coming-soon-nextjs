@@ -9,7 +9,22 @@ function Navigation() {
             // ['Home', '/'],
             ['Чи довго чекатати ?', '/version1'],
         ].map(([title, url]) => (
-            <a key={title} href={url} className="rounded-lg px-3 py-2 font-semibold text-slate-800 hover:bg-slate-700 hover:text-slate-100 dark:text-slate-100 dark:hover:text-slate-800 dark:hover:bg-zinc-300">{title}</a>
+            <a
+              key={title}
+              href={url}
+              className="
+                rounded-lg px-3 py-2
+                font-semibold
+                text-slate-800 dark:text-slate-100
+                bg-slate-100 dark:bg-slate-800 bg-opacity-70
+                hover:bg-opacity-100 hover:bg-slate-200 dark:hover:bg-slate-700
+                transition-colors duration-200
+                shadow-sm
+                focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500
+              "
+              >
+              {title}
+            </a>
         ))}
         <ThemeSwitch />
     </nav>

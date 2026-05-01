@@ -26,6 +26,10 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+html {
+  font-size: clamp(14px, 0.8vw + 0.5rem, 18px);
+}
+
 
 .button{
   @apply p-2 font-semibold rounded-lg border-solid border-2 transition ease-in-out
