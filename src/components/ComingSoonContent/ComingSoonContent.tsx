@@ -10,7 +10,7 @@ function ComingSoonContent() {
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
             {title}
           </span>
-          <span className="">⏳</span>
+          {/* <span className="">⏳</span> */}
         </h2>
         <p
           className="text-2xl md:text-3xl px-6 max-w-3xl text-center m-5 text-slate-800 dark:text-slate-100 font-thin"
